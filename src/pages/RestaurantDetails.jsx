@@ -1,18 +1,18 @@
+
 import { useParams } from "react-router-dom";
 
 function RestaurantDetails() {
-
   const { id } = useParams();
 
   return (
-    <div className="max-w-6xl mx-auto p-5">
+    <div className="max-w-6xl mx-auto p-6">
 
-      <h1 className="text-3xl font-bold">
-        Restaurant ID : {id}
+      <h1 className="text-4xl font-bold">
+        Restaurant Details
       </h1>
 
-      <p className="mt-3">
-        Menu items will be shown here.
+      <p className="mt-4 text-xl">
+        Restaurant ID: {id}
       </p>
 
     </div>
@@ -20,3 +20,4 @@ function RestaurantDetails() {
 }
 
 export default RestaurantDetails;
+
